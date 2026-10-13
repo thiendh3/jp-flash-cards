@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#fff0f3" />
+    <title>日本語 Flashcards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app" id="app" data-state="loading">
+      <header class="top">
+        <div class="top__row">
+          <h1 class="top__title">日本語 <span aria-hidden="true">✿</span></h1>
+          <div class="chips" aria-live="polite">
+            <span class="chip" title="Còn lại">📚 <b id="left">0</b></span>
+            <span class="chip chip--yes" title="Đã thuộc">✅ <b id="known">0</b></span>
+            <span class="chip" title="Vòng">🔁 <b id="round">1</b></span>
+          </div>
+          <button class="icon-btn" id="reset" type="button" aria-label="Học lại từ đầu" title="Học lại từ đầu">↻</button>
+        </div>
+        <div class="bar" role="progressbar" aria-label="Tiến độ" aria-valuemin="0" aria-valuemax="100" id="bar">
+          <div class="bar__fill" id="barFill"></div>
+        </div>
+      </header>
+
+      <main class="main">
+        <p class="status" id="status">Đang tải từ vựng…</p>
+
+        <div class="row" id="row">
+          <button class="arrow arrow--no" id="btnNo" type="button" aria-label="Chưa thuộc (←)" title="Chưa thuộc (←)">←</button>
+
+          <div class="stage" id="stage">
+            <div class="ghost ghost--2" id="ghost2" hidden></div>
+            <div class="ghost ghost--1" id="ghost1" hidden></div>
+
+            <div class="card" id="card">
+              <div class="card__inner" id="inner">
+                <div class="card__face card__face--front">
+                  <span class="card__text" id="front"></span>
+                  <span class="card__tip">chạm để lật ✨</span>
+                </div>
+                <div class="card__face card__face--back">
+                  <span class="card__spelling" id="spelling"></span>
+                  <span class="card__meaning" id="meaning"></span>
+                </div>
+              </div>
+              <div class="card__glow card__glow--yes"></div>
+              <div class="card__glow card__glow--no"></div>
+              <span class="card__stamp card__stamp--yes">Thuộc rồi! 🎉</span>
+              <span class="card__stamp card__stamp--no">Chưa thuộc 💦</span>
+              <span class="card__edge card__edge--left" aria-hidden="true">‹</span>
+              <span class="card__edge card__edge--right" aria-hidden="true">›</span>
+            </div>
+          </div>
+
+          <button class="arrow arrow--yes" id="btnYes" type="button" aria-label="Đã thuộc (→)" title="Đã thuộc (→)">→</button>
+        </div>
+
+        <section class="done" id="done" hidden>
+          <div class="done__emoji" aria-hidden="true">🌸</div>
+          <h2>Giỏi quá!</h2>
+          <p id="doneText"></p>
+          <button class="btn" id="again" type="button">Học lại từ đầu</button>
+          <div class="confetti" id="confetti" aria-hidden="true"></div>
+        </section>
+
+        <button class="undo" id="undo" type="button" disabled>↶ Hoàn tác</button>
+
+        <p class="hint">
+          <span class="hint--touch">Chạm giữa để lật · chạm rìa trái/phải hoặc vuốt để chọn</span>
+          <span class="hint--mouse">Click để lật · kéo thẻ hoặc dùng ← → · Ctrl/⌘+Z hoàn tác</span>
+        </p>
+      </main>
+
+      <div class="toast" id="toast" role="status"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
