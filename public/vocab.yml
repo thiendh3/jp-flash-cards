@@ -2572,9 +2572,6 @@
 - kanji: だぶだぶ
   spelling: だぶだぶ
   meaning: rộng thùng thình
-- kanji: ぷかぷか
-  spelling: ぷかぷか
-  meaning: lềnh bềnh, phì phèo (hút thuốc)
 - kanji: ぺこぺこ
   spelling: ぺこぺこ
   meaning: đói meo; cúi đầu lia lịa
@@ -2911,3 +2908,678 @@
 - kanji: 既に
   spelling: すでに
   meaning: đã, đã từ trước
+- kanji: ぴかぴか
+  spelling: ぴかぴか
+  meaning: lấp lánh, sáng bóng
+- kanji: 干す
+  spelling: ほす
+  meaning: phơi, làm khô
+- kanji: 週刊誌
+  spelling: しゅうかんし
+  meaning: tạp chí hàng tuần
+- kanji: 朝刊
+  spelling: ちょうかん
+  meaning: báo buổi sáng
+- kanji: 平日
+  spelling: へいじつ
+  meaning: ngày thường
+- kanji: 平和
+  spelling: へいわ
+  meaning: hòa bình
+- kanji: 平気
+  spelling: へいき
+  meaning: bình thản, không sao
+- kanji: 平凡
+  spelling: へいぼん
+  meaning: bình thường, tầm thường
+- kanji: 平方メートル
+  spelling: へいほうめーとる
+  meaning: mét vuông
+- kanji: 汗
+  spelling: あせ
+  meaning: mồ hôi
+- kanji: 泣く
+  spelling: なく
+  meaning: khóc
+- kanji: 泊まる
+  spelling: とまる
+  meaning: ở trọ, trọ lại
+- kanji: 舌
+  spelling: した
+  meaning: cái lưỡi
+- kanji: 活動
+  spelling: かつどう
+  meaning: hoạt động
+- kanji: 活躍
+  spelling: かつやく
+  meaning: hoạt động tích cực, tỏa sáng
+- kanji: 活気
+  spelling: かっき
+  meaning: sôi nổi, sinh khí
+- kanji: 生活費
+  spelling: せいかつひ
+  meaning: chi phí sinh hoạt
+- kanji: 辞める
+  spelling: やめる
+  meaning: nghỉ việc, từ chức
+- kanji: お辞儀
+  spelling: おじぎ
+  meaning: cúi chào
+- kanji: 辞書
+  spelling: じしょ
+  meaning: từ điển
+- kanji: 固まる
+  spelling: かたまる
+  meaning: đông cứng, cứng lại
+- kanji: 個人
+  spelling: こじん
+  meaning: cá nhân
+- kanji: 苦しむ
+  spelling: くるしむ
+  meaning: đau khổ, khổ sở
+- kanji: 苦しい
+  spelling: くるしい
+  meaning: khó chịu, đau đớn, vất vả
+- kanji: 苦い
+  spelling: にがい
+  meaning: đắng
+- kanji: 苦労
+  spelling: くろう
+  meaning: vất vả, khổ cực
+- kanji: 適当
+  spelling: てきとう
+  meaning: thích hợp; qua loa, tùy tiện
+- kanji: 人間
+  spelling: にんげん
+  meaning: con người
+- kanji: 馬
+  spelling: うま
+  meaning: con ngựa
+- kanji: 体温
+  spelling: たいおん
+  meaning: thân nhiệt
+- kanji: 違い
+  spelling: ちがい
+  meaning: sự khác biệt
+- kanji: 文化
+  spelling: ぶんか
+  meaning: văn hóa
+- kanji: 考え
+  spelling: かんがえ
+  meaning: suy nghĩ, ý kiến
+- kanji: 思い
+  spelling: おもい
+  meaning: suy nghĩ, cảm xúc, nỗi niềm
+- kanji: 風景
+  spelling: ふうけい
+  meaning: phong cảnh
+- kanji: 年齢
+  spelling: ねんれい
+  meaning: tuổi tác
+- kanji: 料金
+  spelling: りょうきん
+  meaning: tiền phí, cước phí
+- kanji: 両親
+  spelling: りょうしん
+  meaning: cha mẹ
+- kanji: 職業
+  spelling: しょくぎょう
+  meaning: nghề nghiệp
+- kanji: 大雪
+  spelling: おおゆき
+  meaning: tuyết lớn
+- kanji: 大雨
+  spelling: おおあめ
+  meaning: mưa lớn
+- kanji: 環境
+  spelling: かんきょう
+  meaning: môi trường
+- kanji: 点数
+  spelling: てんすう
+  meaning: điểm số
+- kanji: 香り
+  spelling: かおり
+  meaning: hương thơm
+- kanji: 身長
+  spelling: しんちょう
+  meaning: chiều cao
+- kanji: 体重
+  spelling: たいじゅう
+  meaning: cân nặng
+- kanji: 胸
+  spelling: むね
+  meaning: ngực
+- kanji: 量
+  spelling: りょう
+  meaning: lượng, số lượng
+- kanji: 以降
+  spelling: いこう
+  meaning: từ sau, trở về sau
+- kanji: 以外
+  spelling: いがい
+  meaning: ngoài ra, ngoại trừ
+- kanji: マナー
+  spelling: まなー
+  meaning: phép lịch sự, cách cư xử (manner)
+- kanji: アンケート
+  spelling: あんけーと
+  meaning: bảng khảo sát (enquête)
+- kanji: メニュー
+  spelling: めにゅー
+  meaning: thực đơn (menu)
+- kanji: ストレス
+  spelling: すとれす
+  meaning: căng thẳng (stress)
+- kanji: 貧乏
+  spelling: びんぼう
+  meaning: nghèo
+- kanji: 不満
+  spelling: ふまん
+  meaning: bất mãn, không hài lòng
+- kanji: 様々
+  spelling: さまざま
+  meaning: đa dạng, nhiều loại
+- kanji: 美しい
+  spelling: うつくしい
+  meaning: đẹp
+- kanji: 決める
+  spelling: きめる
+  meaning: quyết định
+- kanji: 下げる
+  spelling: さげる
+  meaning: hạ xuống, giảm
+- kanji: 味わう
+  spelling: あじわう
+  meaning: nếm, thưởng thức
+- kanji: 違う
+  spelling: ちがう
+  meaning: khác, sai
+- kanji: 払う
+  spelling: はらう
+  meaning: trả (tiền)
+- kanji: 高まる
+  spelling: たかまる
+  meaning: tăng lên, cao lên
+- kanji: 高める
+  spelling: たかめる
+  meaning: nâng cao
+- kanji: 眠る
+  spelling: ねむる
+  meaning: ngủ
+- kanji: 指導
+  spelling: しどう
+  meaning: hướng dẫn, chỉ đạo
+- kanji: 協力
+  spelling: きょうりょく
+  meaning: hợp tác
+- kanji: 休憩
+  spelling: きゅうけい
+  meaning: nghỉ giải lao
+- kanji: 交流
+  spelling: こうりゅう
+  meaning: giao lưu
+- kanji: 出場
+  spelling: しゅつじょう
+  meaning: tham gia (thi đấu)
+- kanji: キャンセル
+  spelling: きゃんせる
+  meaning: hủy (cancel)
+- kanji: 優勝
+  spelling: ゆうしょう
+  meaning: vô địch
+- kanji: 急に
+  spelling: きゅうに
+  meaning: đột nhiên
+- kanji: 決して
+  spelling: けっして
+  meaning: tuyệt đối không (đi với phủ định)
+- kanji: 意志
+  spelling: いし
+  meaning: ý chí
+- kanji: 意義
+  spelling: いぎ
+  meaning: ý nghĩa, ý nghĩa quan trọng
+- kanji: 意識
+  spelling: いしき
+  meaning: ý thức
+- kanji: 意外
+  spelling: いがい
+  meaning: bất ngờ, ngoài dự đoán
+- kanji: 知識
+  spelling: ちしき
+  meaning: tri thức, kiến thức
+- kanji: 就職
+  spelling: しゅうしょく
+  meaning: tìm được việc, đi làm
+- kanji: 退職
+  spelling: たいしょく
+  meaning: nghỉ hưu, thôi việc
+- kanji: 職員
+  spelling: しょくいん
+  meaning: nhân viên
+- kanji: 直接
+  spelling: ちょくせつ
+  meaning: trực tiếp
+- kanji: 面接
+  spelling: めんせつ
+  meaning: phỏng vấn
+- kanji: 間接的
+  spelling: かんせつてき
+  meaning: mang tính gián tiếp
+- kanji: 翌〜
+  spelling: よく〜
+  meaning: ~ tiếp theo, ~ sau
+- kanji: 翌朝
+  spelling: よくあさ
+  meaning: sáng hôm sau
+- kanji: 翌日
+  spelling: よくじつ
+  meaning: ngày hôm sau
+- kanji: 翌年
+  spelling: よくねん
+  meaning: năm sau
+- kanji: お土産
+  spelling: おみやげ
+  meaning: quà lưu niệm
+- kanji: 産む
+  spelling: うむ
+  meaning: sinh (con), đẻ
+- kanji: 産業
+  spelling: さんぎょう
+  meaning: công nghiệp, ngành sản xuất
+- kanji: 生産
+  spelling: せいさん
+  meaning: sản xuất
+- kanji: 〜産
+  spelling: 〜さん
+  meaning: sản xuất tại ~
+- kanji: 位置
+  spelling: いち
+  meaning: vị trí
+- kanji: 〜倍
+  spelling: 〜ばい
+  meaning: gấp ~ lần
+- kanji: 気候
+  spelling: きこう
+  meaning: khí hậu
+- kanji: 仮定
+  spelling: かてい
+  meaning: giả định
+- kanji: 任せる
+  spelling: まかせる
+  meaning: giao phó, phó mặc
+- kanji: 担任
+  spelling: たんにん
+  meaning: giáo viên chủ nhiệm
+- kanji: 全責任
+  spelling: ぜんせきにん
+  meaning: toàn bộ trách nhiệm
+- kanji: 件
+  spelling: けん
+  meaning: vụ, việc, sự kiện
+- kanji: 条件
+  spelling: じょうけん
+  meaning: điều kiện
+- kanji: 無条件
+  spelling: むじょうけん
+  meaning: vô điều kiện
+- kanji: 直す
+  spelling: なおす
+  meaning: sửa, chữa
+- kanji: 直る
+  spelling: なおる
+  meaning: được sửa, hồi phục
+- kanji: 〜直す
+  spelling: 〜なおす
+  meaning: làm lại ~
+- kanji: 正直
+  spelling: しょうじき
+  meaning: thật thà, thành thật
+- kanji: 素直
+  spelling: すなお
+  meaning: ngoan ngoãn, thẳng thắn
+- kanji: 直前
+  spelling: ちょくぜん
+  meaning: ngay trước
+- kanji: 直後
+  spelling: ちょくご
+  meaning: ngay sau
+- kanji: 値段
+  spelling: ねだん
+  meaning: giá cả
+- kanji: 値上げ
+  spelling: ねあげ
+  meaning: tăng giá
+- kanji: 値下げ
+  spelling: ねさげ
+  meaning: giảm giá
+- kanji: 価値
+  spelling: かち
+  meaning: giá trị
+- kanji: 就職活動
+  spelling: しゅうしょくかつどう
+  meaning: hoạt động tìm việc
+- kanji: 勇気
+  spelling: ゆうき
+  meaning: dũng khí, can đảm
+- kanji: 従兄弟
+  spelling: いとこ
+  meaning: anh chị em họ
+- kanji: 長女
+  spelling: ちょうじょ
+  meaning: con gái cả
+- kanji: 長男
+  spelling: ちょうなん
+  meaning: con trai cả
+- kanji: 夫妻
+  spelling: ふさい
+  meaning: vợ chồng
+- kanji: 双子
+  spelling: ふたご
+  meaning: anh em sinh đôi
+- kanji: 孫
+  spelling: まご
+  meaning: cháu (của ông bà)
+- kanji: 姪
+  spelling: めい
+  meaning: cháu gái (con của anh chị em)
+- kanji: 収入
+  spelling: しゅうにゅう
+  meaning: thu nhập
+- kanji: 看護師
+  spelling: かんごし
+  meaning: y tá
+- kanji: 眠たい
+  spelling: ねむたい
+  meaning: buồn ngủ
+- kanji: 怖い
+  spelling: こわい
+  meaning: đáng sợ, sợ
+- kanji: 悩む
+  spelling: なやむ
+  meaning: phiền muộn, trăn trở
+- kanji: 打つ
+  spelling: うつ
+  meaning: đánh, đập, gõ
+- kanji: 諦める
+  spelling: あきらめる
+  meaning: từ bỏ
+- kanji: 嫌がる
+  spelling: いやがる
+  meaning: ghét, không muốn
+- kanji: 踏む
+  spelling: ふむ
+  meaning: giẫm, đạp
+- kanji: 間違う
+  spelling: まちがう
+  meaning: nhầm, sai
+- kanji: 気がつく
+  spelling: きがつく
+  meaning: nhận ra, để ý thấy
+- kanji: 気になる
+  spelling: きになる
+  meaning: bận tâm, để ý
+- kanji: 仲直り
+  spelling: なかなおり
+  meaning: làm lành, hòa giải
+- kanji: 見直し
+  spelling: みなおし
+  meaning: xem lại, rà soát lại
+- kanji: 値上がり
+  spelling: ねあがり
+  meaning: giá tăng
+- kanji: 値下がり
+  spelling: ねさがり
+  meaning: giá giảm
+- kanji: 待ち合わせ
+  spelling: まちあわせ
+  meaning: hẹn gặp
+- kanji: 発展
+  spelling: はってん
+  meaning: phát triển
+- kanji: 応援
+  spelling: おうえん
+  meaning: cổ vũ, ủng hộ
+- kanji: 〜製
+  spelling: 〜せい
+  meaning: sản xuất bởi ~, làm từ ~
+- kanji: 絶対
+  spelling: ぜったい
+  meaning: tuyệt đối
+- kanji: 他
+  spelling: ほか
+  meaning: khác, ngoài ra
+- kanji: 他人
+  spelling: たにん
+  meaning: người khác, người dưng
+- kanji: 伝える
+  spelling: つたえる
+  meaning: truyền đạt, nhắn lại
+- kanji: 伝わる
+  spelling: つたわる
+  meaning: được truyền đạt, lan truyền
+- kanji: 手伝う
+  spelling: てつだう
+  meaning: giúp đỡ
+- kanji: 手伝い
+  spelling: てつだい
+  meaning: sự giúp đỡ, người giúp việc
+- kanji: 伝統的
+  spelling: でんとうてき
+  meaning: mang tính truyền thống
+- kanji: 伝言
+  spelling: でんごん
+  meaning: lời nhắn
+- kanji: 宣伝
+  spelling: せんでん
+  meaning: quảng cáo, tuyên truyền
+- kanji: 似合う
+  spelling: にあう
+  meaning: hợp, vừa với
+- kanji: 真似
+  spelling: まね
+  meaning: bắt chước
+- kanji: 信じる
+  spelling: しんじる
+  meaning: tin tưởng
+- kanji: 信号
+  spelling: しんごう
+  meaning: đèn tín hiệu, tín hiệu
+- kanji: 信用
+  spelling: しんよう
+  meaning: tín nhiệm, uy tín
+- kanji: 自信
+  spelling: じしん
+  meaning: tự tin
+- kanji: 送信
+  spelling: そうしん
+  meaning: gửi (tin nhắn, thư)
+- kanji: 通信
+  spelling: つうしん
+  meaning: thông tin liên lạc, viễn thông
+- kanji: 許す
+  spelling: ゆるす
+  meaning: tha thứ, cho phép
+- kanji: 許可
+  spelling: きょか
+  meaning: cho phép, giấy phép
+- kanji: 免許
+  spelling: めんきょ
+  meaning: bằng, giấy phép (lái xe)
+- kanji: 訳す
+  spelling: やくす
+  meaning: dịch
+- kanji: 申し訳ない
+  spelling: もうしわけない
+  meaning: xin lỗi, thật có lỗi
+- kanji: 通訳
+  spelling: つうやく
+  meaning: thông dịch
+- kanji: 翻訳
+  spelling: ほんやく
+  meaning: biên dịch
+- kanji: 訳
+  spelling: わけ
+  meaning: lý do, nghĩa, bản dịch
+- kanji: 確認
+  spelling: かくにん
+  meaning: xác nhận, kiểm tra lại
+- kanji: 調べる
+  spelling: しらべる
+  meaning: tìm hiểu, tra cứu
+- kanji: 体調
+  spelling: たいちょう
+  meaning: tình trạng sức khỏe
+- kanji: 強調
+  spelling: きょうちょう
+  meaning: nhấn mạnh
+- kanji: 調整
+  spelling: ちょうせい
+  meaning: điều chỉnh
+- kanji: 調味料
+  spelling: ちょうみりょう
+  meaning: gia vị
+- kanji: 不思議
+  spelling: ふしぎ
+  meaning: kỳ lạ, bí ẩn
+- kanji: 会議
+  spelling: かいぎ
+  meaning: cuộc họp
+- kanji: 羊
+  spelling: ひつじ
+  meaning: con cừu
+- kanji: 差す
+  spelling: さす
+  meaning: chiếu (nắng), che (ô), chỉ
+- kanji: 物差し
+  spelling: ものさし
+  meaning: cái thước
+- kanji: 交差点
+  spelling: こうさてん
+  meaning: ngã tư
+- kanji: 差
+  spelling: さ
+  meaning: sự chênh lệch
+- kanji: 時差
+  spelling: じさ
+  meaning: chênh lệch múi giờ
+- kanji: 美術
+  spelling: びじゅつ
+  meaning: mỹ thuật
+- kanji: 美人
+  spelling: びじん
+  meaning: người đẹp
+- kanji: 美容院
+  spelling: びよういん
+  meaning: tiệm làm tóc, thẩm mỹ viện
+- kanji: 専門
+  spelling: せんもん
+  meaning: chuyên môn
+- kanji: 女優
+  spelling: じょゆう
+  meaning: nữ diễn viên
+- kanji: 画家
+  spelling: がか
+  meaning: họa sĩ
+- kanji: 俳優
+  spelling: はいゆう
+  meaning: diễn viên
+- kanji: 鼻水
+  spelling: はなみず
+  meaning: nước mũi
+- kanji: めまい
+  spelling: めまい
+  meaning: chóng mặt
+- kanji: 好み
+  spelling: このみ
+  meaning: sở thích, khẩu vị
+- kanji: 印象
+  spelling: いんしょう
+  meaning: ấn tượng
+- kanji: アマチュア
+  spelling: あまちゅあ
+  meaning: nghiệp dư (amateur)
+- kanji: コマーシャル
+  spelling: こまーしゃる
+  meaning: quảng cáo (commercial)
+- kanji: タイトル
+  spelling: たいとる
+  meaning: tiêu đề, danh hiệu (title)
+- kanji: メッセージ
+  spelling: めっせーじ
+  meaning: tin nhắn (message)
+- kanji: ヘルメット
+  spelling: へるめっと
+  meaning: mũ bảo hiểm (helmet)
+- kanji: ファイル
+  spelling: ふぁいる
+  meaning: tập tin, tệp hồ sơ (file)
+- kanji: アルバム
+  spelling: あるばむ
+  meaning: album
+- kanji: 夜中
+  spelling: よなか
+  meaning: nửa đêm
+- kanji: 土地
+  spelling: とち
+  meaning: đất đai, vùng đất
+- kanji: プロフェッショナル
+  spelling: ぷろふぇっしょなる
+  meaning: chuyên nghiệp (professional)
+- kanji: 一流
+  spelling: いちりゅう
+  meaning: hạng nhất, đẳng cấp
+- kanji: 険しい
+  spelling: けわしい
+  meaning: dốc, hiểm trở, nghiêm nghị
+- kanji: 治す
+  spelling: なおす
+  meaning: chữa trị
+- kanji: 治る
+  spelling: なおる
+  meaning: khỏi bệnh
+- kanji: 飼う
+  spelling: かう
+  meaning: nuôi (động vật)
+- kanji: 謝る
+  spelling: あやまる
+  meaning: xin lỗi
+- kanji: 転ぶ
+  spelling: ころぶ
+  meaning: ngã
+- kanji: 濡れる
+  spelling: ぬれる
+  meaning: bị ướt
+- kanji: 発生
+  spelling: はっせい
+  meaning: phát sinh, xảy ra
+- kanji: セット
+  spelling: せっと
+  meaning: bộ, thiết lập (set)
+- kanji: カット
+  spelling: かっと
+  meaning: cắt, cắt tóc (cut)
+- kanji: 建築
+  spelling: けんちく
+  meaning: kiến trúc, xây dựng
+- kanji: 監督
+  spelling: かんとく
+  meaning: giám sát, huấn luyện viên, đạo diễn
+- kanji: あくび
+  spelling: あくび
+  meaning: cái ngáp
+- kanji: くしゃみ
+  spelling: くしゃみ
+  meaning: hắt hơi
+- kanji: 居眠り
+  spelling: いねむり
+  meaning: ngủ gật
+- kanji: うがい
+  spelling: うがい
+  meaning: súc miệng
+- kanji: しゃっくり
+  spelling: しゃっくり
+  meaning: nấc cụt
+- kanji: まだまだ
+  spelling: まだまだ
+  meaning: vẫn còn, chưa đủ
