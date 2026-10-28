@@ -27,6 +27,10 @@
           </div>
           <button class="icon-btn" id="reset" type="button" aria-label="Học lại từ đầu" title="Học lại từ đầu">↻</button>
         </div>
+        <div class="seg" role="tablist" aria-label="Loại thẻ">
+          <button class="seg__btn" type="button" role="tab" data-mode="vocab">Từ vựng</button>
+          <button class="seg__btn" type="button" role="tab" data-mode="grammar">Ngữ pháp</button>
+        </div>
         <div class="bar" role="progressbar" aria-label="Tiến độ" aria-valuemin="0" aria-valuemax="100" id="bar">
           <div class="bar__fill" id="barFill"></div>
         </div>
@@ -51,6 +55,11 @@
                 <div class="card__face card__face--back">
                   <span class="card__spelling" id="spelling"></span>
                   <span class="card__meaning" id="meaning"></span>
+                  <div class="gram">
+                    <section><h3>Công thức chi tiết</h3><p id="structure"></p></section>
+                    <section><h3>Nghĩa</h3><p id="gMeaning"></p></section>
+                    <section><h3>Ví dụ</h3><div id="example"></div></section>
+                  </div>
                 </div>
               </div>
               <div class="card__glow card__glow--yes"></div>

@@ -1,0 +1,98 @@
+- formula: ～というと・～といえば・～といったら
+  structure: N + というと／といえば／といったら
+  meaning: Nói đến N thì…, nhắc tới N là nghĩ ngay đến…
+  example:
+    - 日本料理というと、すしを思い浮かべる。
+    - 京都といえば、お寺が有名です。
+    - 彼の料理のうまさといったら、プロ並みだ。
+- formula: ～というより(も)
+  structure: N／V／A + というより(も) + B
+  meaning: Nói là A thì đúng hơn là B, thay vì A thì nên nói là B
+  example:
+    - 彼女は先生というより、友達のような存在だ。
+    - この部屋は暑いというより、熱いくらいだ。
+- formula: ～といっても
+  structure: Thể thường + といっても
+  meaning: Tuy nói là… nhưng thực ra (không như tưởng tượng)
+  example:
+    - 料理ができるといっても、卵焼きくらいです。
+    - 旅行に行ったといっても、近所の温泉です。
+- formula: ～と言われている
+  structure: Thể thường + と言われている
+  meaning: Người ta nói rằng…, được cho là…
+  example:
+    - この神社は恋愛にご利益があると言われている。
+    - 日本人は働きすぎだと言われている。
+- formula: ～ということだ／とのことだ
+  structure: Thể thường + ということだ／とのことだ
+  meaning: Nghe nói là…, theo như được biết thì… (truyền đạt lại thông tin)
+  example:
+    - 天気予報によると、明日は雪が降るということだ。
+    - 社長は出張中とのことです。
+- formula: ～とは
+  structure: N／Thể thường + とは
+  meaning: Định nghĩa "N là…"; hoặc diễn tả sự ngạc nhiên "thật không ngờ là…"
+  example:
+    - 「ワークライフバランス」とは、仕事と生活の調和のことだ。
+    - 彼が試験に落ちるとは思わなかった。
+- formula: ～ところへ・～ところに・〜ところを・〜ところで
+  structure: V(辞書形／ている／た) + ところへ／ところに／ところを／ところで
+  meaning: Đúng lúc đang… thì (xảy ra việc khác); ところで = nhân tiện, dù có… cũng
+  example:
+    - 出かけようとしたところへ、友達が来た。
+    - 寝ているところを起こされた。
+    - 今から走ったところで、間に合わないだろう。
+- formula: ～最中に
+  structure: V ている／N の + 最中に
+  meaning: Đang giữa lúc… thì (có việc bất ngờ xảy ra)
+  example:
+    - 会議の最中に、電話が鳴った。
+    - 食事をしている最中に、停電になった。
+- formula: ～ごとに
+  structure: N／V辞書形 + ごとに
+  meaning: Cứ mỗi…, mỗi một…
+  example:
+    - 一年ごとに、パスポートの期限を確認する。
+    - 5分ごとにバスが来る。
+- formula: ～たびに
+  structure: V辞書形／N の + たびに
+  meaning: Mỗi lần… là lại…
+  example:
+    - この曲を聞くたびに、故郷を思い出す。
+    - 彼は会うたびに背が伸びている。
+- formula: ～ことがある
+  structure: V辞書形／V ない + ことがある
+  meaning: Đôi khi có (xảy ra) việc…
+  example:
+    - 朝ごはんを食べないことがある。
+    - 仕事が忙しくて、帰りが遅くなることがある。
+- formula: ～てしかたがない・～てしょうがない
+  structure: V て／A い→くて／A な→で + しかたがない／しょうがない
+  meaning: …không chịu nổi, …đến mức không thể kiềm chế
+  example:
+    - 試験の結果が気になってしかたがない。
+    - 眠くてしょうがない。
+- formula: ～てよかった
+  structure: V て + よかった
+  meaning: May quá vì đã…, thật tốt là đã…
+  example:
+    - 早めに出てよかった。電車が遅れていた。
+    - この大学に入ってよかったと思う。
+- formula: ～てもらってもいいですか
+  structure: V て + もらってもいいですか
+  meaning: Nhờ (ai) làm giúp… được không ạ? (nhờ vả lịch sự)
+  example:
+    - すみません、写真を撮ってもらってもいいですか。
+    - ちょっとこれを手伝ってもらってもいいですか。
+- formula: ～てはじめて
+  structure: V て + はじめて
+  meaning: Phải sau khi… thì mới (nhận ra, hiểu ra…)
+  example:
+    - 病気になってはじめて、健康のありがたさがわかった。
+    - 親になってはじめて、親の苦労がわかる。
+- formula: ～てからでないと・～てからでなければ
+  structure: V て + からでないと／からでなければ + V ない／できない
+  meaning: Nếu chưa… thì không thể…, phải… rồi mới
+  example:
+    - 医者に相談してからでないと、薬は飲めません。
+    - 全員そろってからでなければ、始められない。

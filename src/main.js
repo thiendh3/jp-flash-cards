@@ -2,6 +2,7 @@ import yaml from 'js-yaml';
 import './style.css';
 import { Deck } from './deck.js';
 import { attachGestures } from './gestures.js';
+import { normalizeVocab, normalizeGrammar } from './modes.js';
 
 const $ = (id) => document.getElementById(id);
 const app = $('app');
@@ -21,26 +22,42 @@ function hash(str) {
   return (h >>> 0).toString(36);
 }
 
-function normalize(list) {
-  if (!Array.isArray(list)) throw new Error('vocab.yml phải là danh sách (mỗi dòng bắt đầu bằng "- ")');
-  return list
-    .map((r) => ({
-      kanji: String(r?.kanji ?? '').trim(),
-      spelling: String(r?.spelling ?? '').trim(),
-      meaning: String(r?.meaning ?? '').trim(),
-    }))
-    .filter((w) => w.kanji || w.spelling);
+const MODES = {
+  vocab: { file: 'vocab.yml', label: 'từ vựng', unit: 'từ', normalize: normalizeVocab },
+  grammar: { file: 'grammar.yml', label: 'ngữ pháp', unit: 'mẫu', normalize: normalizeGrammar },
+};
+const MODE_KEY = 'jpfc:mode';
+
+function savedMode() {
+  try {
+    const m = localStorage.getItem(MODE_KEY);
+    if (m in MODES) return m;
+  } catch {}
+  return 'vocab';
 }
 
+let mode = savedMode();
+let loadSeq = 0; // bỏ qua kết quả fetch cũ khi người dùng đổi tab nhanh
+
 async function load() {
+  const cfg = MODES[mode];
+  const seq = ++loadSeq;
   app.dataset.state = 'loading';
-  $('status').textContent = 'Đang tải từ vựng…';
+  app.dataset.mode = mode;
+  document.querySelectorAll('.seg__btn').forEach((b) => {
+    const on = b.dataset.mode === mode;
+    b.classList.toggle('is-active', on);
+    b.setAttribute('aria-selected', String(on));
+  });
+  $('status').textContent = `Đang tải ${cfg.label}…`;
   try {
-    const res = await fetch(`${import.meta.env.BASE_URL}vocab.yml`, { cache: 'no-cache' });
+    const res = await fetch(`${import.meta.env.BASE_URL}${cfg.file}`, { cache: 'no-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
-    words = normalize(yaml.load(text));
-    if (!words.length) throw new Error('vocab.yml đang trống');
+    const list = cfg.normalize(yaml.load(text));
+    if (!list.length) throw new Error(`${cfg.file} đang trống`);
+    if (seq !== loadSeq) return;
+    words = list;
 
     storageKey = `jpfc:v1:${hash(text)}`;
     let saved = null;
@@ -51,10 +68,11 @@ async function load() {
     app.dataset.state = 'ready';
     render();
   } catch (err) {
+    if (seq !== loadSeq) return;
     app.dataset.state = 'error';
     $('status').innerHTML = '';
     const msg = document.createElement('span');
-    msg.textContent = `Không tải được từ vựng 😢 (${err.message}) `;
+    msg.textContent = `Không tải được ${cfg.label} 😢 (${err.message}) `;
     const retry = document.createElement('button');
     retry.className = 'btn btn--small';
     retry.textContent = 'Thử lại';
@@ -87,18 +105,26 @@ function render() {
   $('undo').disabled = !deck.canUndo;
 
   if (deck.done) {
-    $('doneText').textContent = `Bạn đã thuộc ${total}/${total} từ sau ${deck.round} vòng.`;
+    $('doneText').textContent = `Bạn đã thuộc ${total}/${total} ${MODES[mode].unit} sau ${deck.round} vòng.`;
     confetti();
     return;
   }
 
   const w = words[deck.current];
-  const front = w.kanji || w.spelling;
+  const front = mode === 'grammar' ? w.formula : w.kanji || w.spelling;
   $('front').textContent = front;
   card.dataset.len = front.length > 7 ? 'xl' : front.length > 3 ? 'l' : 'm';
-  $('spelling').textContent = w.kanji ? w.spelling : '';
-  $('spelling').hidden = !w.kanji;
-  $('meaning').textContent = w.meaning;
+  if (mode === 'grammar') {
+    $('structure').textContent = w.structure;
+    $('gMeaning').textContent = w.meaning;
+    $('example').replaceChildren(
+      ...w.example.map((line) => Object.assign(document.createElement('p'), { textContent: line })),
+    );
+  } else {
+    $('spelling').textContent = w.kanji ? w.spelling : '';
+    $('spelling').hidden = !w.kanji;
+    $('meaning').textContent = w.meaning;
+  }
   $('ghost1').hidden = deck.queue.length < 2;
   $('ghost2').hidden = deck.queue.length < 3;
 }
@@ -165,7 +191,7 @@ async function swipe(known) {
   render();
   if (!deck.done) {
     popIn();
-    if (deck.round !== prevRound) toast(`Vòng ${deck.round} · còn ${deck.queue.length} từ chưa thuộc 💪`);
+    if (deck.round !== prevRound) toast(`Vòng ${deck.round} · còn ${deck.queue.length} ${MODES[mode].unit} chưa thuộc 💪`);
   }
   busy = false;
 }
@@ -207,6 +233,18 @@ $('btnNo').onclick = () => swipe(false);
 $('undo').onclick = undo;
 $('reset').onclick = restart;
 $('again').onclick = restart;
+document.querySelectorAll('.seg__btn').forEach((b) => {
+  b.onclick = () => {
+    if (b.dataset.mode === mode || busy) return;
+    mode = b.dataset.mode;
+    try {
+      localStorage.setItem(MODE_KEY, mode);
+    } catch {}
+    deck = null;
+    resetCard();
+    load();
+  };
+});
 
 window.addEventListener('keydown', (e) => {
   if (e.target instanceof HTMLButtonElement && (e.key === ' ' || e.key === 'Enter')) return; // để nút tự xử lý

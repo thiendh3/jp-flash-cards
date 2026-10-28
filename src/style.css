@@ -88,6 +88,29 @@ button {
   color: var(--accent);
   white-space: nowrap;
 }
+.seg {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  padding: 3px;
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  border: 2px solid var(--card-edge);
+  border-radius: 999px;
+}
+.seg__btn {
+  flex: 1;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: 800 0.9rem var(--font-ui);
+  cursor: pointer;
+}
+.seg__btn.is-active {
+  background: var(--accent);
+  color: #fff;
+}
 .chips {
   display: flex;
   gap: 6px;
@@ -289,6 +312,40 @@ button {
 }
 .card__meaning {
   font: 600 clamp(1.15rem, 4.6vmin, 1.7rem) / 1.35 var(--font-ui);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- chế độ ngữ pháp: mặt sau nhiều khối ---------- */
+.gram {
+  display: none;
+}
+.app[data-mode='grammar'] .gram {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  font: 600 clamp(0.95rem, 3.6vmin, 1.15rem) / 1.4 var(--font-jp);
+}
+.app[data-mode='grammar'] .card__spelling,
+.app[data-mode='grammar'] .card__meaning {
+  display: none;
+}
+.app[data-mode='grammar'] .card__face--back {
+  justify-content: flex-start;
+  padding-top: 40px;
+  overflow-y: auto;
+}
+.gram h3 {
+  margin: 0 0 2px;
+  font: 800 0.75rem var(--font-ui);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.gram p {
+  margin: 0;
+  white-space: pre-line;
   overflow-wrap: anywhere;
 }
 
