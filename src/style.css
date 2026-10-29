@@ -184,7 +184,7 @@ button {
 .app[data-state='error'] .status {
   display: block;
 }
-.app:not([data-state='ready']) :is(.row, .undo, .hint) {
+.app:not([data-state='ready']) :is(.row, .undo, .hint, .quiz) {
   display: none;
 }
 
@@ -626,4 +626,76 @@ button {
   .card__inner {
     transition: opacity 0.2s !important;
   }
+}
+
+/* ---------- chế độ kiểm tra ---------- */
+.seg--sub {
+  margin-top: 6px;
+}
+.app[data-study='test'] {
+  --side: 0px;
+  --card-h: clamp(200px, 34dvh, 340px);
+}
+.app[data-study='test'] :is(.arrow, .hint, .card__tip) {
+  display: none;
+}
+.app[data-study='test'] .card {
+  cursor: default;
+}
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: var(--card-w);
+}
+.quiz__hint {
+  margin: 0;
+  min-height: 1.4em;
+  text-align: center;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+.quiz__input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 3px solid var(--card-edge);
+  border-radius: 18px;
+  background: var(--card);
+  color: var(--ink);
+  font: 700 1.5rem var(--font-jp);
+  text-align: center;
+  outline: none;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.quiz__input:focus {
+  border-color: var(--accent);
+}
+.quiz__input.is-right {
+  border-color: var(--yes);
+}
+.quiz__input.is-wrong {
+  border-color: var(--no);
+  animation: shake 0.35s;
+}
+.quiz__msg {
+  margin: 0;
+  min-height: 1.4em;
+  text-align: center;
+  font: 800 1rem var(--font-jp);
+  overflow-wrap: anywhere;
+}
+.quiz__actions {
+  display: flex;
+  gap: 8px;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 2px solid var(--card-edge);
+}
+@keyframes shake {
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
 }

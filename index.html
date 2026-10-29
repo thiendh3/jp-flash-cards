@@ -31,6 +31,10 @@
           <button class="seg__btn" type="button" role="tab" data-mode="vocab">Từ vựng</button>
           <button class="seg__btn" type="button" role="tab" data-mode="grammar">Ngữ pháp</button>
         </div>
+        <div class="seg seg--sub" role="tablist" aria-label="Chế độ học">
+          <button class="seg__btn" type="button" role="tab" data-study="flash">🃏 Thẻ</button>
+          <button class="seg__btn" type="button" role="tab" data-study="test">✍️ Kiểm tra</button>
+        </div>
         <div class="bar" role="progressbar" aria-label="Tiến độ" aria-valuemin="0" aria-valuemax="100" id="bar">
           <div class="bar__fill" id="barFill"></div>
         </div>
@@ -73,6 +77,16 @@
 
           <button class="arrow arrow--yes" id="btnYes" type="button" aria-label="Đã thuộc (→)" title="Đã thuộc (→)">→</button>
         </div>
+
+        <form class="quiz" id="quiz" hidden autocomplete="off">
+          <p class="quiz__hint" id="quizHint"></p>
+          <input class="quiz__input" id="answer" type="text" enterkeyhint="done" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" />
+          <p class="quiz__msg" id="quizMsg" role="status"></p>
+          <div class="quiz__actions">
+            <button class="btn btn--ghost" id="skip" type="button">Bỏ qua · xem đáp án</button>
+            <button class="btn" id="submit" type="submit">Kiểm tra ↵</button>
+          </div>
+        </form>
 
         <section class="done" id="done" hidden>
           <div class="done__emoji" aria-hidden="true">🌸</div>
