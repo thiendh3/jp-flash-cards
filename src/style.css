@@ -632,6 +632,9 @@ button {
 .seg--sub {
   margin-top: 6px;
 }
+.seg--sub[hidden] {
+  display: none;
+}
 .app[data-study='test'] {
   --side: 0px;
   --card-h: clamp(200px, 34dvh, 340px);

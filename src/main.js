@@ -3,8 +3,7 @@ import './style.css';
 import { Deck } from './deck.js';
 import { attachGestures } from './gestures.js';
 import { normalizeVocab, normalizeGrammar } from './modes.js';
-import { toKana, keepTypable } from './kana.js';
-import { checkAnswer } from './quiz.js';
+import { toKana, keepTypable, isSpellingCorrect } from './kana.js';
 
 const $ = (id) => document.getElementById(id);
 const app = $('app');
@@ -50,6 +49,8 @@ function savedStudy() {
 
 let mode = savedMode();
 let study = savedStudy(); // 'flash' = thẻ lật, 'test' = gõ đáp án để qua thẻ
+// Ngữ pháp chỉ có thẻ lật; chế độ kiểm tra chỉ dành cho từ vựng.
+const curStudy = () => (mode === 'grammar' ? 'flash' : study);
 let revealed = false; // chế độ kiểm tra: đã xem đáp án, Enter để sang thẻ kế
 let loadSeq = 0; // bỏ qua kết quả fetch cũ khi người dùng đổi tab nhanh
 
@@ -58,9 +59,10 @@ async function load() {
   const seq = ++loadSeq;
   app.dataset.state = 'loading';
   app.dataset.mode = mode;
-  app.dataset.study = study;
+  app.dataset.study = curStudy();
+  $('studySeg').hidden = mode === 'grammar';
   document.querySelectorAll('.seg__btn').forEach((b) => {
-    const on = b.dataset.mode ? b.dataset.mode === mode : b.dataset.study === study;
+    const on = b.dataset.mode ? b.dataset.mode === mode : b.dataset.study === curStudy();
     b.classList.toggle('is-active', on);
     b.setAttribute('aria-selected', String(on));
   });
@@ -74,7 +76,7 @@ async function load() {
     if (seq !== loadSeq) return;
     words = list;
 
-    storageKey = `jpfc:v1:${hash(text)}${study === 'test' ? ':test' : ''}`; // tiến độ thẻ và kiểm tra tách riêng
+    storageKey = `jpfc:v1:${hash(text)}${curStudy() === 'test' ? ':test' : ''}`; // tiến độ thẻ và kiểm tra tách riêng
     let saved = null;
     try {
       saved = JSON.parse(localStorage.getItem(storageKey));
@@ -116,7 +118,7 @@ function render() {
   app.classList.toggle('is-done', deck.done);
   $('done').hidden = !deck.done;
   $('row').hidden = deck.done;
-  $('quiz').hidden = deck.done || study !== 'test';
+  $('quiz').hidden = deck.done || curStudy() !== 'test';
   $('btnYes').disabled = $('btnNo').disabled = deck.done;
   $('undo').disabled = !deck.canUndo;
 
@@ -129,7 +131,7 @@ function render() {
   const w = words[deck.current];
   const word = w.kanji || w.spelling;
   // Kiểm tra: từ không có kanji (katakana, ぼろぼろ…) mà hiện nguyên chữ thì chỉ là chép lại → hiện nghĩa thay.
-  const kanaOnly = study === 'test' && mode === 'vocab' && !/[一-鿿々]/.test(word);
+  const kanaOnly = curStudy() === 'test' && !/[一-鿿々]/.test(word);
   const front = mode === 'grammar' ? w.formula : kanaOnly ? w.meaning : word;
   $('front').textContent = front;
   card.dataset.len = front.length > 7 ? 'xl' : front.length > 3 ? 'l' : 'm';
@@ -144,7 +146,7 @@ function render() {
     $('spelling').hidden = !w.kanji;
     $('meaning').textContent = w.meaning;
   }
-  if (study === 'test') resetQuiz(w);
+  if (curStudy() === 'test') resetQuiz(w);
   $('ghost1').hidden = deck.queue.length < 2;
   $('ghost2').hidden = deck.queue.length < 3;
 }
@@ -179,22 +181,16 @@ function resetQuiz(w) {
   $('quizMsg').textContent = '';
   $('submit').textContent = 'Kiểm tra ↵';
   $('skip').hidden = false;
-  if (mode === 'grammar') {
-    $('quizHint').textContent = 'Nhập ý nghĩa (gõ một phần là được)';
-    answer.placeholder = 'nghĩa…';
-    answer.lang = 'vi';
-  } else {
-    $('quizHint').textContent = '';
-    answer.placeholder = 'gõ romaji → hiragana';
-    answer.lang = 'ja';
-  }
+  $('quizHint').textContent = '';
+  answer.placeholder = 'gõ romaji → hiragana';
+  answer.lang = 'ja';
   answer.focus({ preventScroll: true });
 }
 
 function submitAnswer() {
-  if (busy || !deck || deck.done || study !== 'test') return;
+  if (busy || !deck || deck.done || curStudy() !== 'test') return;
   if (revealed) return swipe(false); // đã xem đáp án → thẻ quay lại vòng sau
-  if (checkAnswer(mode, answer.value, words[deck.current])) {
+  if (isSpellingCorrect(answer.value, words[deck.current].spelling)) {
     answer.classList.add('is-right');
     $('quizMsg').textContent = 'Đúng rồi! 🎉';
     return swipe(true);
@@ -212,7 +208,7 @@ function revealAnswer() {
   revealed = true;
   answer.readOnly = true;
   answer.classList.remove('is-wrong');
-  $('quizMsg').textContent = `Đáp án: ${mode === 'grammar' ? w.meaning : w.spelling}`;
+  $('quizMsg').textContent = `Đáp án: ${w.spelling}`;
   $('submit').textContent = 'Tiếp ↵';
   $('skip').hidden = true;
 }
@@ -226,14 +222,13 @@ function typedChar(e) {
 }
 
 answer.addEventListener('keydown', (e) => {
-  if (mode !== 'vocab' || answer.readOnly || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (answer.readOnly || e.ctrlKey || e.metaKey || e.altKey) return;
   const ch = typedChar(e);
   if (!ch) return;
   e.preventDefault();
   answer.value = toKana(answer.value + ch);
 });
 answer.addEventListener('input', () => {
-  if (mode !== 'vocab') return;
   const next = toKana(keepTypable(answer.value)); // dán / bàn phím ảo: bỏ kanji, đổi romaji còn sót
   if (next !== answer.value) answer.value = next;
 });
@@ -257,7 +252,7 @@ function resetCard() {
 }
 
 function flip() {
-  if (study !== 'flash' || busy || !deck || deck.done) return;
+  if (curStudy() !== 'flash' || busy || !deck || deck.done) return;
   card.classList.toggle('is-flipped');
 }
 
@@ -324,7 +319,7 @@ function restart() {
 attachGestures(card, {
   onSwipe: swipe,
   onFlip: flip,
-  canInteract: () => study === 'flash' && !busy && deck && !deck.done,
+  canInteract: () => curStudy() === 'flash' && !busy && deck && !deck.done,
 });
 $('btnYes').onclick = () => swipe(true);
 $('btnNo').onclick = () => swipe(false);
@@ -349,7 +344,7 @@ document.querySelectorAll('.seg__btn').forEach((b) => {
 
 window.addEventListener('keydown', (e) => {
   if (e.target instanceof HTMLInputElement) return; // ô nhập đáp án tự xử lý phím
-  if (study === 'test') return;
+  if (curStudy() === 'test') return;
   if (e.target instanceof HTMLButtonElement && (e.key === ' ' || e.key === 'Enter')) return; // để nút tự xử lý
   if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
     e.preventDefault();

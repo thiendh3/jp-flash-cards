@@ -1,7 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { toKana, finalizeKana, isSpellingCorrect, keepTypable } from '../src/kana.js';
-import { isMeaningCorrect, checkAnswer } from '../src/quiz.js';
 
 test('toKana converts common romaji', () => {
   assert.equal(toKana('keshiki'), 'けしき');
@@ -39,19 +38,4 @@ test('isSpellingCorrect: hiragana vs katakana, alternatives, 〜', () => {
   assert.ok(isSpellingCorrect('kinshi', '〜きんし'));
   assert.ok(isSpellingCorrect('han', 'はん'));
   assert.ok(!isSpellingCorrect('', 'はん'));
-});
-
-test('isMeaningCorrect: include, no diacritics needed, min length', () => {
-  const m = 'Nói đến N thì…, nhắc tới N là nghĩ ngay đến…';
-  assert.ok(isMeaningCorrect('nhắc tới', m));
-  assert.ok(isMeaningCorrect('nhac toi', m));
-  assert.ok(isMeaningCorrect('NGHĨ NGAY', m));
-  assert.ok(!isMeaningCorrect('xin chào', m));
-  assert.ok(!isMeaningCorrect('n', m));
-  assert.ok(!isMeaningCorrect('', m));
-});
-
-test('checkAnswer dispatches by kind', () => {
-  assert.ok(checkAnswer('vocab', 'keshiki', { spelling: 'けしき', meaning: 'x' }));
-  assert.ok(checkAnswer('grammar', 'để làm', { meaning: 'để làm gì' }));
 });

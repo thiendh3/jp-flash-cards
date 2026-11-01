@@ -96,3 +96,33 @@
   example:
     - 医者に相談してからでないと、薬は飲めません。
     - 全員そろってからでなければ、始められない。
+- formula: 〜でしかない
+  structure: N + でしかない
+  meaning: Chỉ là…, chẳng qua chỉ là… (đánh giá thấp, không hơn được)
+  example:
+    - 私は、ただの学生でしかない。
+    - 彼にとって、それは遊びでしかなかった。
+- formula: 〜はもちろん〜も
+  structure: N1 + はもちろん + N2 + も
+  meaning: N1 thì đương nhiên rồi, ngay cả N2 cũng…
+  example:
+    - 彼は英語はもちろん、中国語も話せる。
+    - この店は、味はもちろん、サービスもいい。
+- formula: 〜くらい・ほど〜はない
+  structure: N + くらい／ほど + N／V + はない
+  meaning: Không có gì… bằng N, N là nhất
+  example:
+    - 母の料理ほどおいしいものはない。
+    - 友達と話すくらい楽しいことはない。
+- formula: 〜は〜ほど〜ない
+  structure: N1 + は + N2 + ほど + A ない
+  meaning: N1 không… bằng N2 (so sánh không bằng)
+  example:
+    - 今年の夏は去年ほど暑くない。
+    - 弟は私ほど背が高くない。
+- formula: 〜代わりに
+  structure: V辞書形／Nの + 代わりに
+  meaning: Thay vì…, thay cho…; bù lại, đổi lại…
+  example:
+    - 母の代わりに、私が買い物に行った。
+    - 手伝ってあげる代わりに、昼ご飯をおごってね。
