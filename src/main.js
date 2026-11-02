@@ -4,28 +4,28 @@ import { Deck } from './deck.js';
 import { attachGestures } from './gestures.js';
 import { normalizeVocab, normalizeGrammar } from './modes.js';
 import { toKana, keepTypable, isSpellingCorrect } from './kana.js';
+import { today, nextEntry, dueKeys, cleanProgress } from './srs.js';
 
 const $ = (id) => document.getElementById(id);
 const app = $('app');
 const card = $('card');
 const inner = $('inner');
 
-let words = [];
+let words = []; // thẻ của buổi học hôm nay (từ mới + từ đến hạn)
+let sessionKeys = []; // khoá ổn định của từng thẻ trong words (cùng thứ tự)
+let bank = new Map(); // khoá → toàn bộ từ trong file yml
+let progress = {}; // khoá → { box, due } (xem srs.js)
+let day = 0;
 let deck = null;
 let storageKey = '';
 let busy = false;
 let toastTimer = 0;
 
 // ---------- load ----------
-function hash(str) {
-  let h = 5381;
-  for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
-  return (h >>> 0).toString(36);
-}
-
+// Khoá ổn định cho mỗi từ: không phụ thuộc vị trí trong file nên thêm/sửa yml không làm mất tiến độ.
 const MODES = {
-  vocab: { file: 'vocab.yml', label: 'từ vựng', unit: 'từ', normalize: normalizeVocab },
-  grammar: { file: 'grammar.yml', label: 'ngữ pháp', unit: 'mẫu', normalize: normalizeGrammar },
+  vocab: { file: 'vocab.yml', label: 'từ vựng', unit: 'từ', normalize: normalizeVocab, key: (w) => `${w.kanji}|${w.spelling}` },
+  grammar: { file: 'grammar.yml', label: 'ngữ pháp', unit: 'mẫu', normalize: normalizeGrammar, key: (w) => w.formula },
 };
 const MODE_KEY = 'jpfc:mode';
 
@@ -74,14 +74,20 @@ async function load() {
     const list = cfg.normalize(yaml.load(text));
     if (!list.length) throw new Error(`${cfg.file} đang trống`);
     if (seq !== loadSeq) return;
-    words = list;
+    bank = new Map();
+    for (const w of list) {
+      const k = cfg.key(w);
+      if (!bank.has(k)) bank.set(k, w);
+    }
 
-    storageKey = `jpfc:v1:${hash(text)}${curStudy() === 'test' ? ':test' : ''}`; // tiến độ thẻ và kiểm tra tách riêng
+    storageKey = `jpfc:srs:${mode}${curStudy() === 'test' ? ':test' : ''}`; // tiến độ thẻ và kiểm tra tách riêng
     let saved = null;
     try {
       saved = JSON.parse(localStorage.getItem(storageKey));
     } catch {}
-    deck = new Deck(words.length, saved);
+    progress = cleanProgress(saved?.progress);
+    day = today();
+    startSession(saved?.session);
     app.dataset.state = 'ready';
     render();
   } catch (err) {
@@ -98,9 +104,21 @@ async function load() {
   }
 }
 
+// Khôi phục buổi học dở dang trong cùng ngày; nếu không thì dựng buổi mới từ từ mới + từ đến hạn.
+function startSession(savedSession) {
+  if (savedSession?.day === day && Array.isArray(savedSession.keys) && savedSession.keys.every((k) => bank.has(k))) {
+    sessionKeys = savedSession.keys;
+    deck = new Deck(sessionKeys.length, savedSession.deck);
+  } else {
+    sessionKeys = dueKeys([...bank.keys()], progress, day);
+    deck = new Deck(sessionKeys.length);
+  }
+  words = sessionKeys.map((k) => bank.get(k));
+}
+
 function save() {
   try {
-    localStorage.setItem(storageKey, JSON.stringify(deck));
+    localStorage.setItem(storageKey, JSON.stringify({ progress, session: { day, keys: sessionKeys, deck } }));
   } catch {}
 }
 
@@ -111,7 +129,7 @@ function render() {
   $('left').textContent = deck.queue.length + deck.retry.length;
   $('known').textContent = known;
   $('round').textContent = deck.round;
-  const pct = Math.round((known / total) * 100);
+  const pct = total ? Math.round((known / total) * 100) : 100;
   $('barFill').style.width = `${pct}%`;
   $('bar').setAttribute('aria-valuenow', pct);
 
@@ -123,7 +141,9 @@ function render() {
   $('undo').disabled = !deck.canUndo;
 
   if (deck.done) {
-    $('doneText').textContent = `Bạn đã thuộc ${total}/${total} ${MODES[mode].unit} sau ${deck.round} vòng.`;
+    $('doneText').textContent = total
+      ? `Xong buổi hôm nay: ${total} ${MODES[mode].unit} sau ${deck.round} vòng.`
+      : `Hôm nay chưa có ${MODES[mode].unit} nào đến hạn ôn.`;
     confetti();
     return;
   }
@@ -278,7 +298,17 @@ async function swipe(known) {
   await new Promise((r) => setTimeout(r, 280));
 
   const prevRound = deck.round;
-  deck.swipe(known);
+  const id = deck.current;
+  // Chỉ lần vuốt đầu tiên của thẻ trong buổi học mới tính vào hộp; các vòng retry thì không.
+  const first = !deck.history.some((h) => h.id === id);
+  const key = sessionKeys[id];
+  const prev = progress[key] ?? null;
+  const entry = deck.swipe(known);
+  if (first) {
+    entry.first = true;
+    entry.prev = prev;
+    progress[key] = nextEntry(prev, known, day);
+  }
   save();
   resetCard();
   render();
@@ -292,6 +322,11 @@ async function swipe(known) {
 function undo() {
   if (busy || !deck || !deck.canUndo) return;
   const entry = deck.undo();
+  if (entry.first) {
+    const key = sessionKeys[entry.id];
+    if (entry.prev) progress[key] = entry.prev;
+    else delete progress[key];
+  }
   save();
   resetCard();
   render();
@@ -307,8 +342,9 @@ function undo() {
 
 function restart() {
   if (!deck) return;
-  if (!deck.done && deck.known.size > 0 && !window.confirm('Học lại từ đầu? Tiến độ hiện tại sẽ mất.')) return;
-  deck.reset();
+  if (!window.confirm('Học lại từ đầu? Toàn bộ tiến độ (các hộp ôn tập) sẽ mất.')) return;
+  progress = {};
+  startSession(null);
   save();
   resetCard();
   render();
