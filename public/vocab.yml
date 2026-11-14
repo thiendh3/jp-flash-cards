@@ -117,8 +117,8 @@
 - kanji: 生
   spelling: なま
   meaning: sống, tươi (chưa nấu chín)
-- kanji: 非常に
-  spelling: ひじょうに
+- kanji: 非常
+  spelling: ひじょう
   meaning: vô cùng, cực kỳ
 - kanji: 主婦
   spelling: しゅふ
@@ -4333,3 +4333,249 @@
 - kanji: 〜品
   spelling: 〜ひん
   meaning: "hàng ~, sản phẩm ~"
+- kanji: 疑問
+  spelling: ぎもん
+  meaning: "nghi vấn, câu hỏi, thắc mắc"
+- kanji: 美術館
+  spelling: びじゅつかん
+  meaning: bảo tàng mỹ thuật
+- kanji: 芸術家
+  spelling: げいじゅつか
+  meaning: nghệ sĩ
+- kanji: 御飯
+  spelling: ごはん
+  meaning: "cơm, bữa ăn"
+- kanji: 保険証
+  spelling: ほけんしょう
+  meaning: thẻ bảo hiểm
+- kanji: 郵送
+  spelling: ゆうそう
+  meaning: gửi qua bưu điện
+- kanji: 郵便
+  spelling: ゆうびん
+  meaning: "bưu điện, bưu phẩm"
+- kanji: 予定
+  spelling: よてい
+  meaning: "dự định, kế hoạch"
+- kanji: 息
+  spelling: いき
+  meaning: hơi thở
+- kanji: 息子
+  spelling: むすこ
+  meaning: con trai (của mình)
+- kanji: 首
+  spelling: くび
+  meaning: "cổ; bị đuổi việc"
+- kanji: 首都
+  spelling: しゅと
+  meaning: thủ đô
+- kanji: 手首
+  spelling: てくび
+  meaning: cổ tay
+- kanji: 罪
+  spelling: つみ
+  meaning: "tội, tội lỗi"
+- kanji: 記念日
+  spelling: きねんび
+  meaning: ngày kỷ niệm
+- kanji: 恋
+  spelling: こい
+  meaning: tình yêu (luyến ái)
+- kanji: 愛
+  spelling: あい
+  meaning: "tình yêu, yêu thương"
+- kanji: 文句
+  spelling: もんく
+  meaning: "phàn nàn, càu nhàu"
+- kanji: 帰り
+  spelling: かえり
+  meaning: "sự trở về, lúc về"
+- kanji: 定期券
+  spelling: ていきけん
+  meaning: "vé tháng, vé định kỳ"
+- kanji: 締め切り
+  spelling: しめきり
+  meaning: "hạn chót, deadline"
+- kanji: ジム
+  spelling: じむ
+  meaning: phòng tập gym
+- kanji: フロント
+  spelling: ふろんと
+  meaning: quầy lễ tân (front)
+- kanji: アドレス
+  spelling: あどれす
+  meaning: "địa chỉ (email, web)"
+- kanji: ポスト
+  spelling: ぽすと
+  meaning: "hòm thư; chức vụ"
+- kanji: マスコミ
+  spelling: ますこみ
+  meaning: truyền thông đại chúng
+- kanji: ロビー
+  spelling: ろびー
+  meaning: sảnh (lobby)
+- kanji: プラン
+  spelling: ぷらん
+  meaning: kế hoạch (plan)
+- kanji: ヒント
+  spelling: ひんと
+  meaning: gợi ý (hint)
+- kanji: リスト
+  spelling: りすと
+  meaning: danh sách (list)
+- kanji: オーバー
+  spelling: おーばー
+  meaning: "vượt quá; áo khoác ngoài; cường điệu"
+- kanji: アウト
+  spelling: あうと
+  meaning: "ngoài, hỏng, out"
+- kanji: 恋しい
+  spelling: こいしい
+  meaning: "nhớ nhung, thương nhớ"
+- kanji: まぶしい
+  spelling: まぶしい
+  meaning: "chói, chói mắt"
+- kanji: 効く
+  spelling: きく
+  meaning: "có hiệu quả, công hiệu"
+- kanji: 焦げる
+  spelling: こげる
+  meaning: "bị cháy, khét"
+- kanji: こぼす
+  spelling: こぼす
+  meaning: "làm đổ, làm tràn; than phiền"
+- kanji: 転がす
+  spelling: ころがす
+  meaning: lăn (cái gì)
+- kanji: 転がる
+  spelling: ころがる
+  meaning: "lăn, bị lăn"
+- kanji: 怖がる
+  spelling: こわがる
+  meaning: sợ hãi
+- kanji: 指す
+  spelling: さす
+  meaning: "chỉ, chỉ vào"
+- kanji: しまう
+  spelling: しまう
+  meaning: "cất đi; (~てしまう) lỡ, xong"
+- kanji: しゃがむ
+  spelling: しゃがむ
+  meaning: ngồi xổm
+- kanji: 薦める
+  spelling: すすめる
+  meaning: "tiến cử, giới thiệu"
+- kanji: 滑る
+  spelling: すべる
+  meaning: "trượt, trơn"
+- kanji: 統べる
+  spelling: すべる
+  meaning: "thống trị, cai quản"
+- kanji: 済ませる
+  spelling: すませる
+  meaning: "hoàn thành, làm xong"
+- kanji: 曇る
+  spelling: くもる
+  meaning: "có mây, u ám"
+- kanji: 叫ぶ
+  spelling: さけぶ
+  meaning: "hét, gào thét"
+- kanji: 炊く
+  spelling: たく
+  meaning: nấu (cơm)
+- kanji: 刻む
+  spelling: きざむ
+  meaning: "băm, thái nhỏ; khắc"
+- kanji: 削る
+  spelling: けずる
+  meaning: "gọt, bào; cắt giảm"
+- kanji: 揃う
+  spelling: そろう
+  meaning: "đủ, đầy đủ, đồng đều"
+- kanji: 揃える
+  spelling: そろえる
+  meaning: "chuẩn bị đủ, sắp xếp đồng đều"
+- kanji: 尋ねる
+  spelling: たずねる
+  meaning: "hỏi, hỏi thăm"
+- kanji: 足りる
+  spelling: たりる
+  meaning: đủ
+- kanji: 通じる
+  spelling: つうじる
+  meaning: "thông, hiểu được; kết nối"
+- kanji: 捕まえる
+  spelling: つかまえる
+  meaning: "bắt, bắt giữ"
+- kanji: 愛する
+  spelling: あいする
+  meaning: yêu
+- kanji: 記念
+  spelling: きねん
+  meaning: kỷ niệm
+- kanji: 乗車
+  spelling: じょうしゃ
+  meaning: "lên xe, đi xe"
+- kanji: 記入
+  spelling: きにゅう
+  meaning: "điền vào, ghi vào"
+- kanji: 影響
+  spelling: えいきょう
+  meaning: ảnh hưởng
+- kanji: 返事
+  spelling: へんじ
+  meaning: "trả lời, hồi âm"
+- kanji: 応答
+  spelling: おうとう
+  meaning: "ứng đáp, trả lời"
+- kanji: 応用
+  spelling: おうよう
+  meaning: ứng dụng
+- kanji: アナウンス
+  spelling: あなうんす
+  meaning: thông báo (announce)
+- kanji: オープン
+  spelling: おーぷん
+  meaning: "khai trương, mở cửa"
+- kanji: チェックアウト
+  spelling: ちぇっくあうと
+  meaning: trả phòng (check-out)
+- kanji: ミックス
+  spelling: みっくす
+  meaning: "trộn, hỗn hợp (mix)"
+- kanji: アップ
+  spelling: あっぷ
+  meaning: tăng lên (up)
+- kanji: タイプ
+  spelling: たいぷ
+  meaning: "kiểu, loại (type)"
+- kanji: ピックアップ
+  spelling: ぴっくあっぷ
+  meaning: "chọn ra; đón (pick up)"
+- kanji: アクセス
+  spelling: あくせす
+  meaning: "truy cập; đường đi tới (access)"
+- kanji: 必ず
+  spelling: かならず
+  meaning: "nhất định, chắc chắn"
+- kanji: どんなに
+  spelling: どんなに
+  meaning: "dù thế nào, biết bao"
+- kanji: なるべく
+  spelling: なるべく
+  meaning: "cố gắng hết mức, càng ~ càng tốt"
+- kanji: 騙す
+  spelling: だます
+  meaning: "lừa, lừa gạt"
+- kanji: 黙る
+  spelling: だまる
+  meaning: im lặng
+- kanji: 掴む
+  spelling: つかむ
+  meaning: "nắm, chộp lấy"
+- kanji: 繋ぐ
+  spelling: つなぐ
+  meaning: "nối, kết nối, nắm (tay)"
+- kanji: 繋げる
+  spelling: つなげる
+  meaning: "nối lại, kết nối"
