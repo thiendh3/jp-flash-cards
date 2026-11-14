@@ -200,3 +200,39 @@
   example:
     - 毎日練習しているから、試合に勝つに決まっている。
     - そんな話、うそに決まっている。
+- formula: 〜がちだ
+  structure: V（bỏ ます）／N + がちだ
+  meaning: Hay…, thường hay… (xu hướng dễ xảy ra, thường là điều không tốt)
+  example:
+    - 冬は風邪をひきがちだ。
+    - 彼は遅刻しがちなので、注意してください。
+- formula: 〜っけ
+  structure: Vた・Aだった・Nだ・Nだった・Naだ・Na だった + っけ
+  meaning: …nhỉ?, …thì phải? (nhớ không chắc, hỏi lại để xác nhận)
+  example:
+    - 会議は何時からだったっけ。
+    - この店、前も来たことあったっけ。
+- formula: 〜かと思った
+  structure: Thể thường + かと思った
+  meaning: Cứ tưởng là…, suýt nghĩ là… (hóa ra không phải, ngạc nhiên/nhẹ nhõm)
+  example:
+    - 電話が鳴らないから、壊れたのかと思った。
+    - 知らない人かと思ったら、兄だった。
+- formula: 〜じゃない・〜じゃん
+  structure: Thể thường（Na・N） + じゃない／じゃん
+  meaning: …đấy chứ, …mà (nhấn mạnh, đồng tình; じゃん là thân mật)
+  example:
+    - このラーメン、おいしいじゃない。
+    - 約束したじゃん。忘れたの？
+- formula: 〜でしょうか
+  structure: N・Na・A thể thường・Vます・ごV（bỏ ます） + でしょうか
+  meaning: …không ạ?, …chăng? (cách hỏi lịch sự, nhẹ nhàng)
+  example:
+    - 駅はどこでしょうか。
+    - 明日までに提出すればいいでしょうか。
+- formula: 〜のでしょうか・〜んでしょうか
+  structure: Thể thường（Na／N → な） + のでしょうか／んでしょうか
+  meaning: …phải không ạ? (hỏi lịch sự, mong được giải thích lý do/tình huống)
+  example:
+    - どうして遅れたのでしょうか。
+    - この薬はいつ飲むんでしょうか。
