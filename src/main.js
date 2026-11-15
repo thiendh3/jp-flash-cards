@@ -104,11 +104,15 @@ async function load() {
   }
 }
 
-// Khôi phục buổi học dở dang trong cùng ngày; nếu không thì dựng buổi mới từ từ mới + từ đến hạn.
+// Khôi phục buổi học dở dang trong cùng ngày; buổi đã xong hoặc sang ngày mới thì dựng lại từ từ mới + từ đến hạn.
 function startSession(savedSession) {
-  if (savedSession?.day === day && Array.isArray(savedSession.keys) && savedSession.keys.every((k) => bank.has(k))) {
+  const restored =
+    savedSession?.day === day && Array.isArray(savedSession.keys) && savedSession.keys.every((k) => bank.has(k))
+      ? new Deck(savedSession.keys.length, savedSession.deck)
+      : null;
+  if (restored && !restored.done) {
     sessionKeys = savedSession.keys;
-    deck = new Deck(sessionKeys.length, savedSession.deck);
+    deck = restored;
   } else {
     sessionKeys = dueKeys([...bank.keys()], progress, day);
     deck = new Deck(sessionKeys.length);
