@@ -236,3 +236,75 @@
   example:
     - どうして遅れたのでしょうか。
     - この薬はいつ飲むんでしょうか。
+- formula: 〜たとたん(に)
+  structure: Vた + とたん(に)
+  meaning: Vừa mới… thì đột nhiên…
+  example:
+    - 家を出たとたん、雨が降り出した。
+    - 立ち上がったとたんに、めまいがした。
+- formula: 〜ついでに
+  structure: Vる／Vた／Nの + ついでに
+  meaning: Nhân tiện…, tiện thể…
+  example:
+    - 買い物に行くついでに、郵便局に寄った。
+    - 東京に出張したついでに、友達に会った。
+- formula: 〜途中で・途中に
+  structure: Vる／Nの + 途中で・途中に
+  meaning: Trên đường…, giữa chừng…
+  example:
+    - 学校へ行く途中で、先生に会った。
+    - 話の途中に、電話がかかってきた。
+- formula: 〜から〜にかけて
+  structure: N1 + から + N2 + にかけて
+  meaning: Từ N1 đến N2 (khoảng thời gian/phạm vi không rõ ranh giới)
+  example:
+    - 三月から四月にかけて、桜が咲く。
+    - 台風は九州から関東にかけて接近している。
+- formula: ちっとも〜ない
+  structure: ちっとも + Vない／Aくない
+  meaning: Một chút cũng không…, hoàn toàn không…
+  example:
+    - この映画はちっともおもしろくない。
+    - 彼の話はちっとも分からない。
+- formula: 〜ずにいる
+  structure: Vない(bỏ ない) + ずにいる
+  meaning: Cứ không… (trạng thái không làm V kéo dài)
+  example:
+    - 昨日から何も食べずにいる。
+    - 彼女に本当のことを言えずにいる。
+- formula: 〜だらけ
+  structure: N + だらけ
+  meaning: Đầy, toàn là… (thường nghĩa xấu)
+  example:
+    - この部屋はほこりだらけだ。
+    - 間違いだらけのレポートを提出してしまった。
+- formula: 〜向き
+  structure: N + 向き
+  meaning: Hợp với, thích hợp cho N; hướng về…
+  example:
+    - この料理は子ども向きの味だ。
+    - この部屋は南向きで明るい。
+- formula: 〜向け
+  structure: N + 向け
+  meaning: Dành cho (đối tượng N)
+  example:
+    - これは外国人向けの日本語の教科書だ。
+    - 若者向けの雑誌を読む。
+- formula: 〜をする
+  structure: N + をする
+  meaning: Có (đặc điểm/hình dạng/màu sắc…) như là N
+  example:
+    - 彼は優しい目をしている。
+    - 彼女は青い顔をしていた。
+- formula: 〜か何か
+  structure: N/Vる + か何か
+  meaning: …hay gì đó, hoặc đại loại thế
+  example:
+    - お茶か何か飲みませんか。
+    - 風邪か何かで休んでいるのだろう。
+- formula: 〜させておく
+  structure: Vさせておく
+  meaning: Để/cho (ai) cứ làm…, mặc cho làm…
+  example:
+    - 子どもが遊びたがっているので、遊ばせておく。
+    - 眠そうなので、もう少し寝させておこう。
