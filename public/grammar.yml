@@ -308,3 +308,106 @@
   example:
     - 子どもが遊びたがっているので、遊ばせておく。
     - 眠そうなので、もう少し寝させておこう。
+- formula: 〜かける・〜かけの
+  structure: V(bỏ ます) + かける・かけのN・かけだ
+  meaning: Đang V dở, Đang dần V/Suýt V, Sắp sửa V
+  example:
+    - やりかけのレポートを終わらせてから、遊びに行くつもりだ。
+    - 子供の頃、プールで溺れかけた私を父が助けてくれた。
+- formula: 〜きる
+  structure: V(bỏ ます) + きる
+  meaning: V hết/Rất V, Hoàn toàn V, Hết mực V
+  example:
+    - こんな量のご飯、一人では食べきれない。
+    - 信頼しまっていた人に利用されていたことを知って、ショックで涙も出ない。
+- formula: 〜まま（で・だ）
+  structure: Vた・Vない・A・Nの + まま
+  meaning: Cứ để nguyên ~/Vẫn ~ như vậy
+  example:
+    - カバンを置いたままトイレに行くなんて、不注意な人だな。
+- formula: 〜まま〜する
+  structure: Vられる・Vられた + まま（に）、〜する
+  meaning: Làm ~ theo đúng như (được) V
+  example:
+    - 彼女に誘われるまま、パーティーに来た。
+- formula: 〜っぱなし
+  structure: V(bỏます) + っぱなし（だ・で）・っぱなしに + する・なる・っぱなしのN
+  meaning: Cứ để nguyên V như vậy mà làm gì khác/ V suốt (tiêu cực)
+  example:
+    - 母に結婚のことを言われっぱなしです
+- formula: 〜こと
+  structure: Vる・Vない + こと
+  meaning: Hãy, phải V/Không được V (thông báo, quy định)
+  example:
+    - 目上の人には常に敬意を持って接すること
+- formula: 〜ことはない
+  structure: Vる + ことはない
+  meaning: Không cần phải V
+  example:
+    - 失恋したって落ち込むことはない。
+- formula: 〜（より）ほかない・〜しかない
+  structure: Vる + （より）ほかない・〜しかない
+  meaning: Chỉ còn cách V
+  example:
+    - 試験に合格したいなら、死ぬ気で勉強するよりほかないよ。
+- formula: 〜方がいい
+  structure: Vた・Vない + 方がいい
+  meaning: Nên, không nên V (người nói cho là đúng)
+  example:
+    - 一生懸命なのはいいけど、無理しない方がいいですよ。
+- formula: 〜べきだ
+  structure: Vる・N/A(な)である・A(い)くある + べきだ
+  meaning: Nên (luân thường đạo lí)
+  example:
+    - 君はもっと両親に感謝するべきだ。
+- formula: 〜に関して
+  structure: N1 + にかんして(は)〜・に関してのN2・に関するN2
+  meaning: Về, liên quan đến N
+  example:
+    - 12月に行われるJLPTに関しての情報を調べる。
+- formula: 〜にわたって
+  structure: N1 + にわたって・にわてり、・にわたるN2
+  meaning: Trên toàn/Trong suốt (thời gian, không gian)
+  example:
+    - 先週から一週間にわたり、晴れの日が続いている。
+- formula: 〜を通じて・〜を通して
+  structure: N1 + を通して、を通じて・を通してのN2
+  meaning: Thông qua (phương thức, trung gian)/Trong suốt N (quãng thời gian)
+  example:
+    - 彼女を通して、私は彼と知り合いました。
+    - N3に合格するのに、3ヶ月を通して一生懸命勉強する。
+- formula: 〜を込めて
+  structure: N1 + を込めて・を込めたN2
+  meaning: (N2) Chất chứa, Dồn cả N1.
+  example:
+    - 恋を込めて作ったチョコレートを彼に渡した。
+- formula: 〜ほか（に・は）
+  structure: Thể thường・Nの・Aな + ほか・ほかに・ほかは
+  meaning: Ngoài ~ ra thì, Ngoài trừ ~ thì (bổ sung)
+  example:
+    - 健康管理のほかに、ストレス解消も大切です。
+- formula: 〜一方で
+  structure: Thể thường・Aな・Aである・Nの・Nである + 一方で
+  meaning: (Một mặt) thì ~, mặt khác thì ~/Trong khi ~ thì ~/ đồng thời thì ~ (2 mặt khác nhau)
+  example:
+    - 私の家は、今、支出が多い一方で、収入があまり多くない。
+- formula: 〜だけでなく
+  structure: Thể thường・Aな・N + だけでなく
+  meaning: Không chỉ ~ mà còn ~
+  example:
+    - 彼は仕事が早いだけでなく、丁寧だ。
+- formula: 〜ばかりでなく
+  structure: Thể thường・Aな・Aである・N・Nである + ばかりで(は)なく
+  meaning: Không chỉ ~ mà còn ~
+  example:
+    - グインさんは日本語ばかりでなく、英語も話せる
+- formula: 〜はずだ
+  structure: Thể thường・Aな・Aである・Nの・Nである + はずだ
+  meaning: Chắc chắn là ~/Đương nhiên là ~ (suy đoán mang tính chắc chắn)
+  example:
+    - こんな時間になったから、彼女はもう寝ているはずだ。
+- formula: 〜はずがない・〜わけがない
+  structure: Thể thường・Aな・Aである・Nの・Nである + はずだ
+  meaning: Làm sao có thể ~/Chắc chắn là không ~/Không đời nào ~
+  example:
+    - 全然勉強していない彼が、N3に合格できるはずがない。
