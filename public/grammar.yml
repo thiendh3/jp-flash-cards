@@ -411,3 +411,29 @@
   meaning: Làm sao có thể ~/Chắc chắn là không ~/Không đời nào ~
   example:
     - 全然勉強していない彼が、N3に合格できるはずがない。
+- formula: 〜につき
+  structure: N + につき
+  meaning: (1) Vì ~ (lý do, dùng trong thông báo)/(2) Mỗi ~, trên mỗi ~
+  example:
+    - 本日は祝日につき、休業いたします。
+- formula: 〜もの・〜もん
+  structure: Thể thường + もの・もん
+  meaning: Vì ~ mà (giải thích lý do, mang sắc thái nũng nịu, biện minh; dùng trong văn nói)
+  example:
+    - だって、まだ子供なんだもん。
+- formula: 〜ものだから・〜もので
+  structure: Thể thường・Aな→な・Nな + ものだから・もので
+  meaning: Vì ~ nên (giải thích lý do, thường dùng để xin lỗi, biện minh)
+  example:
+    - 電車が遅れたものですから、遅刻してしまいました。
+- formula: 〜をきっかけに・〜がきっかけで
+  structure: N・Vる こと + をきっかけに・がきっかけで
+  meaning: Nhân dịp ~/Bắt đầu từ ~ (sự việc làm nảy sinh một thay đổi, hành động mới)
+  example:
+    - 友達に誘われたのをきっかけに、ジョギングを始めた。
+- formula: 〜ことになっている
+  structure: Vる・Vない + ことになっている
+  meaning: Theo quy định/Theo lịch ~ thì phải ~ (luật lệ, quy tắc, dự định đã được quyết định)
+  example:
+    - この会社では、毎朝9時に朝礼をすることになっている。
+

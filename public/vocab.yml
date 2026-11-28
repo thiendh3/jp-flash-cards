@@ -2101,7 +2101,7 @@
 - kanji: 飛び出す
   spelling: とびだす
   meaning: lao ra, nhảy ra
-- kanji: あふれる
+- kanji: 溢れる
   spelling: あふれる
   meaning: tràn ra
 - kanji: 凍る
@@ -5309,8 +5309,8 @@
 - kanji: スタート
   spelling: すたーと
   meaning: bắt đầu (start)
-- kanji: ストープ
-  spelling: すとーぷ
+- kanji: ストップ
+  spelling: すとっぷ
   meaning: dừng lại (stop)
 - kanji: 通学
   spelling: つうがく
@@ -5372,3 +5372,255 @@
 - kanji: 防ぐ
   spelling: ふせぐ
   meaning: phòng ngừa, ngăn chặn
+- kanji: 理解
+  spelling: りかい
+  meaning: hiểu, lý giải
+- kanji: 画像
+  spelling: がぞう
+  meaning: hình ảnh, ảnh
+- kanji: 増加
+  spelling: ぞうか
+  meaning: tăng, gia tăng
+- kanji: 助かる
+  spelling: たすかる
+  meaning: được cứu, thoát nạn; đỡ vất vả, được giúp
+- kanji: 通勤
+  spelling: つうきん
+  meaning: đi làm (từ nhà đến chỗ làm)
+- kanji: 勝つ
+  spelling: かつ
+  meaning: thắng
+- kanji: 勝ち
+  spelling: かち
+  meaning: chiến thắng, sự thắng
+- kanji: 頑張る
+  spelling: がんばる
+  meaning: cố gắng, nỗ lực; kiên trì
+- kanji: 引っ張る
+  spelling: ひっぱる
+  meaning: kéo, giằng; lôi kéo, dẫn dắt
+- kanji: 主張
+  spelling: しゅちょう
+  meaning: chủ trương, khẳng định, quan điểm
+- kanji: 出張
+  spelling: しゅっちょう
+  meaning: đi công tác
+- kanji: 出張先
+  spelling: しゅっちょうさき
+  meaning: nơi đi công tác
+- kanji: 〜費
+  spelling: 〜ひ
+  meaning: phí ~, chi phí ~
+- kanji: 会費
+  spelling: かいひ
+  meaning: hội phí
+- kanji: 学費
+  spelling: がくひ
+  meaning: học phí
+- kanji: 食費
+  spelling: しょくひ
+  meaning: tiền ăn
+- kanji: 交通費
+  spelling: こうつうひ
+  meaning: phí đi lại
+- kanji: 消費
+  spelling: しょうひ
+  meaning: tiêu dùng, tiêu thụ
+- kanji: 次第に
+  spelling: しだいに
+  meaning: dần dần
+- kanji: 大量
+  spelling: たいりょう
+  meaning: số lượng lớn
+- kanji: 多量
+  spelling: たりょう
+  meaning: lượng nhiều
+- kanji: 会員
+  spelling: かいいん
+  meaning: hội viên
+- kanji: 裏
+  spelling: うら
+  meaning: mặt sau, mặt trái; phía sau; thứ ẩn giấu; mặt dưới (chân)
+- kanji: 岩
+  spelling: いわ
+  meaning: đá tảng, núi đá
+- kanji: 警官
+  spelling: けいかん
+  meaning: cảnh sát
+- kanji: 昨夜
+  spelling: さくや・ゆうべ
+  meaning: đêm qua, tối qua
+- kanji: 医師
+  spelling: いし
+  meaning: bác sĩ
+- kanji: 形
+  spelling: かたち
+  meaning: hình dạng, hình dáng (かたち)
+- kanji: 油
+  spelling: あぶら
+  meaning: dầu, mỡ
+- kanji: 粉
+  spelling: こな
+  meaning: bột (こな)
+- kanji: 部分
+  spelling: ぶぶん
+  meaning: bộ phận, phần
+- kanji: 番
+  spelling: ばん
+  meaning: số thứ tự; lượt (đến lượt mình); canh gác, trông giúp
+- kanji: 当日
+  spelling: とうじつ
+  meaning: ngày hôm đó, đúng ngày
+- kanji: 秘密
+  spelling: ひみつ
+  meaning: bí mật
+- kanji: ファストフード
+  spelling: ふぁすとふーど
+  meaning: đồ ăn nhanh (fast food)
+- kanji: プロジェクト
+  spelling: ぷろじぇくと
+  meaning: dự án (project)
+- kanji: ベンチ
+  spelling: べんち
+  meaning: ghế dài (bench)
+- kanji: リボン
+  spelling: りぼん
+  meaning: ruy băng, nơ (ribbon)
+- kanji: ロープ
+  spelling: ろーぷ
+  meaning: dây thừng (rope)
+- kanji: カーペット
+  spelling: かーぺっと
+  meaning: thảm trải sàn (carpet)
+- kanji: ガラス
+  spelling: がらす
+  meaning: kính, thủy tinh (glass)
+- kanji: ソファー
+  spelling: そふぁー
+  meaning: ghế sofa
+- kanji: ベランダ
+  spelling: べらんだ
+  meaning: ban công, hiên (veranda)
+- kanji: ペットボトル
+  spelling: ぺっとぼとる
+  meaning: chai nhựa (PET bottle)
+- kanji: バケツ
+  spelling: ばけつ
+  meaning: cái xô (bucket)
+- kanji: ホッチキス
+  spelling: ほっちきす
+  meaning: cái dập ghim (hotchkiss)
+- kanji: ブラシ
+  spelling: ぶらし
+  meaning: bàn chải, cọ (brush)
+- kanji: ドライヤー
+  spelling: どらいやー
+  meaning: máy sấy tóc (dryer)
+- kanji: 正確
+  spelling: せいかく
+  meaning: chính xác
+- kanji: 確か
+  spelling: たしか
+  meaning: chắc chắn, xác thực; đáng tin cậy; nếu tôi nhớ không nhầm, hình như
+- kanji: 勇ましい
+  spelling: いさましい
+  meaning: dũng cảm, hùng dũng
+- kanji: そそっかしい
+  spelling: そそっかしい
+  meaning: hậu đậu, cẩu thả, vội vàng
+- kanji: 憎らしい
+  spelling: にくらしい
+  meaning: đáng ghét, đáng hận
+- kanji: 憎い
+  spelling: にくい
+  meaning: ghét, căm ghét; đáng ghét
+- kanji: 若々しい
+  spelling: わかわかしい
+  meaning: trẻ trung
+- kanji: だらしない
+  spelling: だらしない
+  meaning: luộm thuộm, cẩu thả, thiếu kỷ luật
+- kanji: だるい
+  spelling: だるい
+  meaning: uể oải, mệt mỏi rã rời
+- kanji: 茶色い
+  spelling: ちゃいろい
+  meaning: màu nâu
+- kanji: とんでもない
+  spelling: とんでもない
+  meaning: vô lý, quá đáng; không đời nào, đâu có (khiêm tốn); không ngờ được
+- kanji: 明確
+  spelling: めいかく
+  meaning: rõ ràng, minh bạch
+- kanji: 図々しい
+  spelling: ずうずうしい
+  meaning: mặt dày, trơ tráo
+- kanji: 喧しい
+  spelling: やかましい
+  meaning: ồn ào, om sòm; khắt khe, hay cằn nhằn
+- kanji: 確かめる
+  spelling: たしかめる
+  meaning: xác nhận, kiểm tra lại
+- kanji: 追う
+  spelling: おう
+  meaning: đuổi theo, truy đuổi; theo đuổi (lý tưởng); đuổi đi; bị dồn dập (仕事に追われる); theo thứ tự (順を追って)
+- kanji: 追い越す
+  spelling: おいこす
+  meaning: vượt qua (xe, người phía trước)
+- kanji: 追い抜く
+  spelling: おいぬく
+  meaning: vượt lên, bỏ lại phía sau
+- kanji: 追いつく
+  spelling: おいつく
+  meaning: đuổi kịp
+- kanji: こぼれる
+  spelling: こぼれる
+  meaning: bị đổ, tràn ra
+- kanji: 量る
+  spelling: はかる
+  meaning: đo (lượng), cân
+- kanji: 溺れる
+  spelling: おぼれる
+  meaning: chết đuối, đuối nước; chìm đắm (vào)
+- kanji: 編む
+  spelling: あむ
+  meaning: đan, tết
+- kanji: いじめる
+  spelling: いじめる
+  meaning: bắt nạt, hành hạ
+- kanji: 換わる
+  spelling: かわる
+  meaning: được đổi, được thay (換 đổi chác)
+- kanji: 挙げる
+  spelling: あげる
+  meaning: giơ lên; nêu ra (ví dụ); tổ chức (đám cưới)
+- kanji: 揚げる
+  spelling: あげる
+  meaning: rán, chiên; kéo lên (cờ)
+- kanji: 当てる
+  spelling: あてる
+  meaning: đặt vào, áp vào; đoán trúng; chiếu, phơi (nắng, gió); ném trúng; chỉ định (gọi trả lời)
+- kanji: チェンジ
+  spelling: ちぇんじ
+  meaning: thay đổi (change)
+- kanji: ラップ
+  spelling: らっぷ
+  meaning: màng bọc thực phẩm; vòng đua (lap); nhạc rap
+- kanji: 外食
+  spelling: がいしょく
+  meaning: ăn ngoài
+- kanji: 確かに
+  spelling: たしかに
+  meaning: quả thật, đúng là
+- kanji: 〜量
+  spelling: 〜りょう
+  meaning: lượng ~
+- kanji: 空ける
+  spelling: あける
+  meaning: để trống, dọn trống; bỏ trống (thời gian)
+- kanji: 憧れる
+  spelling: あこがれる
+  meaning: ngưỡng mộ, khao khát
+- kanji: 縛る
+  spelling: しばる
+  meaning: trói, buộc; ràng buộc
