@@ -436,4 +436,66 @@
   meaning: Theo quy định/Theo lịch ~ thì phải ~ (luật lệ, quy tắc, dự định đã được quyết định)
   example:
     - この会社では、毎朝9時に朝礼をすることになっている。
-
+- formula: 〜ということだ
+  structure: Thể thường + ということだ
+  meaning: Có nghĩa là ~ (giải thích, diễn giải ý nghĩa của điều được nêu ra trước đó)
+  example:
+    - 私にとって幸せとは、人を幸せにするということだ。
+- formula: 〜という点
+  structure: Thể thường・N + という点（で・が）
+  meaning: Có nghĩa là ~ (giải thích, diễn giải ý nghĩa của điều được nêu ra trước đó)
+  example:
+    - A社のパソコンにより、B社のパソコンのほうが丈夫だという点で評価が高い。
+- formula: 〜という点
+  structure: Thể thường・N + という点（で・が）
+  meaning: Ở điểm là ~/Ở khía cạnh là ~
+  example:
+    - A社のパソコンにより、B社のパソコンのほうが丈夫だという点で評価が高い。
+- formula: 〜としたら
+  structure: Thể thường + としたら
+  meaning: Giả sử nếu mà ~ (điều khó xảy ra trong thực tế)
+  example:
+    - 明日地球が終わるとしたら、今日は何をしたいますか。
+- formula: 〜ようとする
+  structure: Vよう + とする
+  meaning: (1)Định V, cố gắng làm V thì ~ (V có ý chí)/(2)Sắp sửa V (V không ý chí)
+  example:
+    - 出かけようとしたよき、電話がかかってきた。
+    - 気がつくと夏休みが終わろうとしている。
+- formula: 〜ようとしない
+  structure: Vよう + としない
+  meaning: Quyết không làm V/Không chịu làm V
+  example:
+    - 父に病気に行くことを勧めているが、ちちは行こうとしない。
+- formula: 〜ようとしない
+  structure: Vよう + としない
+  meaning: Quyết không làm V/Không chịu làm V
+  example:
+    - 父に病気に行くことを勧めているが、ちちは行こうとしない。
+- formula: 〜など・〜なんか・〜なんて
+  structure: N + など・なんか・なんて
+  meaning: (1)Như là N ~ /Kiểu như N ~ (đề xuất, ví dụ)/(2)Cái thứ như N thì ~ (xem nhẹ, khiêm tốn)
+  example:
+    - 今晩、日本料理なんてどう？
+    - あの人の言葉など、信じられない。
+- formula: 〜なんて
+  structure: Thể thường・A/Nだ・だった + なんて
+  meaning: Bày tỏ sự bất ngờ, kinh ngạc trước ~
+  example:
+    - 4月に東京で雪が降るなんて異常だ。
+- formula: 〜たらどうか
+  structure: Vた + らどうか
+  meaning: Nếu V thì thế nào?/V thử xem sao? (suggestion)
+  example:
+    - 分からないなら、先生に聞いてみたらどう？
+- formula: 〜ことだ
+  structure: Vる・Vない + ことだ。
+  meaning: Nên/Không nên V (người trên nói người dưới)
+  example:
+    - どんなことがあっても、冷静に対応することだ。
+- formula: 〜ことにする・〜ことにした
+  structure: Vる・Vない + ことに + する・した
+  meaning: Quyết định V/Không V
+  example:
+    - 決めた。4月から日本語を勉強することにします。
+    - 健康のために、毎日運動することにした。
